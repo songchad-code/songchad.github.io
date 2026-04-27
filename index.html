@@ -3,21 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>성공팔이 송차드 | 자본주의 생존 법칙</title>
+    <title>SONG CHAD | Trading Archive</title>
     <style>
-        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Apple SD Gothic Neo', sans-serif; text-align: center; margin: 0; padding: 0; }
-        header { padding: 120px 20px; border-bottom: 1px solid #30363d; background: linear-gradient(180deg, #161b22 0%, #0d1117 100%); }
-        h1 { color: #58a6ff; font-size: 3.5rem; margin-bottom: 15px; }
-        .subtitle { font-size: 1.4rem; color: #8b949e; max-width: 800px; margin: 0 auto; line-height: 1.6; }
-        .cta-button { display: inline-block; margin-top: 40px; padding: 18px 45px; background-color: #238636; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; }
-        .cta-button:hover { background-color: #2ea043; }
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; margin: 0; line-height: 1.6; }
+        
+        /* 네비게이션 바 */
+        nav { padding: 20px 50px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.2rem; color: var(--accent); }
+        
+        /* 메인 섹션 */
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        header { margin-bottom: 50px; text-align: left; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #ffffff; }
+        .desc { font-size: 1.1rem; color: #8b949e; }
+
+        /* 카드 그리드 */
+        .section-title { font-size: 1.5rem; margin: 40px 0 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        .note-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .note-card { background: var(--card-bg); border: 1px solid var(--border); padding: 25px; border-radius: 8px; transition: 0.2s; cursor: pointer; text-decoration: none; color: inherit; }
+        .note-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .note-card h3 { margin: 0 0 10px; color: var(--accent); }
+        .note-card p { font-size: 0.95rem; color: #8b949e; margin: 0; }
+        .date { font-size: 0.8rem; color: #484f58; margin-bottom: 10px; display: block; }
+
+        @media (max-width: 768px) { .note-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <header>
-        <h1>SUCCESS SELLER: SONG CHAD</h1>
-        <p class="subtitle">"뜬구름 잡는 소리 안 합니다. 실전에서 살아남을 수 있는 생존 법칙과 숫자로 증명된 계좌만 공유합니다."</p>
-        <a href="여기에_유튜브_링크_넣기" class="cta-button">유튜브 채널 구독하기</a>
-    </header>
+    <nav>
+        <div class="logo">SONG CHAD</div>
+        <div>Archive / Projects / About</div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Trading Archive</h1>
+            <p class="desc">자본주의 시장의 흐름과 실전 트레이딩의 기록을 담습니다. <br>뜬구름 잡는 소리가 아닌, 오직 논리와 숫자로만 증명합니다.</p>
+        </header>
+
+        <h2 class="section-title">Recent Strategies</h2>
+        <div class="note-grid">
+            <a href="#" class="note-card">
+                <span class="date">2026-04-28</span>
+                <h3>금(Gold) 20kg 자산 배분 전략</h3>
+                <p>인플레이션 방어와 포트폴리오 헷징을 위한 실물 자산 매수 논리</p>
+            </a>
+            <a href="#" class="note-card">
+                <span class="date">2026-04-25</span>
+                <h3>나스닥 100 기술적 분석</h3>
+                <p>금리 동결 시나리오에 따른 하방 경직성 확보 구간 타점 공유</p>
+            </a>
+        </div>
+
+        <h2 class="section-title">Essential Logic</h2>
+        <div class="note-grid">
+            <div class="note-card">
+                <h3>거시경제(Macro)</h3>
+                <p>시장의 유동성 총량이 자산 가격의 80%를 결정합니다.</p>
+            </div>
+            <div class="note-card">
+                <h3>심리 통제</h3>
+                <p>완벽한 타점이 올 때까지 기다리는 것이 가장 큰 기술입니다.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
